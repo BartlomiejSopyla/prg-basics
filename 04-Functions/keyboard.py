@@ -2,18 +2,24 @@
 # Functions to read any data type from the keyboard
 #
 def input_string(message):
-    text = input(message)
-    return str(text)
+    user_input = input(message)
+    return user_input
 
 def input_integer(message):
-    number = input(message)
-    return int(number)
+    user_input = input(message)
+    return int(user_input)
 
 def input_real(message):
-    real = input(message)
-    return float(real)
+    user_input = input(message)
+    return float(user_input)
 
 def input_boolean(message):
-    boolean = input(message)
-    return bool(boolean)
+    user_input = input(message).lower()
+    if user_input == 'y':
+        return True
+    elif user_input == 'n':
+        return False
+    else: 
+        print("Please enter 'y' for Yes or 'n' for No.")
 
+    
