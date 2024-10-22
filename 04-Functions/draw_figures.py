@@ -1,21 +1,14 @@
 import turtle
 import figures
+
 # Set up the screen
 window = turtle.Screen()
 window.bgcolor("lightgreen")
-
-# Create the turtle
 pen = turtle.Turtle()
 pen.speed(5)
-
-# Side length
-side_length = figures.draw_square(300)
-
-# Draw a square
-for i in range(4):
-    pen.forward(side_length)
-    pen.right(90)
-
-# Hide the turtle and finish
-pen.hideturtle()
+side_length = 100
+side_length2 = 20
+# figures.draw_square(side_length)
+# figures.draw_triangle(side_length)
+figures.draw_rectangle(side_length, side_length2)
 window.mainloop()
